@@ -1,0 +1,8 @@
+{
+    "name": "Hackathon Calender Project",
+    "version":"0.0.1",
+    "dependencies": {
+	"angular-ui-calendar": "latest",
+	"bootstrap-css":"2.3.1"
+    }
+}

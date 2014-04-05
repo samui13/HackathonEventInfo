@@ -1,0 +1,81 @@
+body{
+    background-color:#FBFCF2;
+}
+.site-title{
+    font-color:#595959;
+}
+.calender{
+    background-color:#ffffff;
+}
+#rNavi{
+    background-color:#FBFCF2;
+    padding: 0 30px;
+}
+#rNavi h1 a:link{
+    color:#595959;
+}
+#rNavi h1 a:visited{
+    color:#595959;
+}
+#regionButton{
+    margin-top:50px;
+}
+
+#calender,#contents{
+    margin:30px 0px;
+    padding: 0 30px;
+}
+#calender{
+    background-color:#ffffff;
+}
+#index #contents .row > div{
+    //margin-left: 20px;
+    margin-top:10px;
+    height: 250px;
+    
+    //margin-right: 100px;
+    //padding-left: 100px;
+    color: #FFF;
+}
+#index #contents  .content{
+    padding-left:10px;
+    padding-top:5px;
+    background-color: rgb(108,108,108);
+    height:250px;
+}
+#index #contents  .content a:link{
+    color:#FFF;
+}
+#index #contents  .content a:visited{
+    color:#FFF;
+}
+
+#index #contents .row > div h2{
+    
+}
+#rNavi > .nav {
+    padding-top:50px;
+    margin-left:-10px;
+}
+#rNavi > .nav li{
+    border-bottom: 1px dotted #000;
+    padding-left:20px;
+}
+
+#rNavi > .nav li a:link{
+    color:#000;
+    
+}
+#rNavi > .nav li a:hover{
+    background-color: #FFF;
+    //background-color: rgbrgb(250,252,238);
+
+}
+#rNavi > .nav li a:visited{
+    color:#000;
+}
+
+
+.site-main{
+    color: #000;
+}

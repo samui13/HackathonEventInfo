@@ -1,0 +1,36 @@
+<script type="text/ng-template" id="myModalContent.html">
+  <div class="modal-header">
+    <h3>{{content.title}}</h3>
+  </div>
+  <div class="modal-body">
+    <b>{{content.start | date:'yyyy-MM-dd'}}
+    -
+    {{content.end | date:'yyyy-MM-dd'}}
+    </b>
+    <div ng-bind-html="description"></div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+  </div>
+</script>
+
+<!--<button class="btn btn-default" ng-click="open()">Open me!</button>-->
+<div>
+<div class="row">
+  <ng-include src="'partials/template/navbar.html'"></ng-include>
+    <div id="regionButton">
+      <span ng-repeat="r in regionOrder" style="background-color:{{region[r].color}};color:{{region[r].font_color}};padding:10px 10px;margin: 10px 0px;">
+	<a href ng-click="clickRegion(r,myCalendar1)" style="color:{{region[r].font_color}};">{{r}}</a>
+      </span>
+    </div>
+
+  <div id="calender" class="col-md-8 col-sm-12">
+
+    <div class="calendar" ng-model="eventSources" calendar="myCalendar1" config="uiConfig.calendar" ui-calendar="uiConfig.calendar" style="width:auto;"></div>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+</div>
