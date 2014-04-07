@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="calendarApp" id="top">
   <head>
-    <title>Hackathon Event Info</title>
+    <title ng-bind="'Hackathon Event Info - ' + title">Hackathon Event Info</title>
+    <meta property="og:title" content="Hackathon Event Info - {{title}}" /> 
+
+    <meta property="og:url" content="http://hackathon.style-info.org/" /> 
+    
+    <meta property="og:description" content="Hackathonの情報を配信" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
     <link rel="stylesheet" href="./lib/venders/fullcalendar/fullcalendar.css" />

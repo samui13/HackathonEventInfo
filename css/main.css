@@ -28,16 +28,25 @@ body{
 #calender{
     background-color:#ffffff;
 }
+#event #contents .row  h1{
+    display:none;
+    //font-size:1px;
+}
+
+#event #contents{
+    background-color: #FFF;
+    padding-left:50px;
+    padding-bottom:20px;
+}
 #index #contents .row > div{
     //margin-left: 20px;
     margin-top:10px;
     height: 250px;
-    
     //margin-right: 100px;
-    //padding-left: 100px;
+    //padding-left: 20px;
     color: #FFF;
 }
-#index #contents  .content{
+#index #contents .content{
     padding-left:10px;
     padding-top:5px;
     background-color: rgb(108,108,108);
@@ -52,6 +61,16 @@ body{
 
 #index #contents .row > div h2{
     
+}
+#index #eventList{
+    padding:10px;
+    background-color: #fff;
+}
+
+#index #eventList h3{
+}
+#index #eventList a:link,a:visited{
+    color:#000;
 }
 #rNavi > .nav {
     padding-top:50px;
