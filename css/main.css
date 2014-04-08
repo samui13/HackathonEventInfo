@@ -69,9 +69,6 @@ body{
 
 #index #eventList h3{
 }
-#index #eventList a:link,a:visited{
-    color:#000;
-}
 #rNavi > .nav {
     padding-top:50px;
     margin-left:-10px;
@@ -97,4 +94,20 @@ body{
 
 .site-main{
     color: #000;
+}
+
+
+#event #contents a:link,a:visited,a:hover,a{
+    color:rgb(31,78,248);
+}
+#eventlist #contents{
+    background-color:#fFF;
+}
+
+#eventlist #contents a:hover,a:link,a:visited{
+    color:#000;
+}
+#event #contents a:hover,a:link,a:visited{
+    color:rgb(31,78,138);
+
 }
