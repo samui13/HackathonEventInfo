@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="calendarApp" id="top">
   <head>
-
-    <title>Hackathon Event Info - {{title}}</title>
+    <meta content="!" name="fragment">
+    <title>Hackathon Event Info</title>
     <meta http-equiv="Content-Style-Type" content="text/css; charset=UTF-8">
     
     <meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
     <meta http-equiv="description" content="hackathonイベント情報一覧。ハッカソンイベントをカレンダーで見れる。過去のハッカソンのプロダクトをまとめる">
     <meta http-equiv="keywords" content="hackathon,イベント情報,ハッカソマトメ,ハッカソン一覧,プロダクト,ハッカソングループ">
-    <meta content="!" name="fragment">
+    
     <meta content="Hackathon Event Info" property="og:site_name">
-    <meta content="Hackathon Event Info - {{ title }}" property="og:title">
+    <meta content="{{ title }}" property="og:title">
     <meta content="http://hackathon.style-info.org/" property="og:url"> 
     <meta property="og:description" content="Hackathonの情報を配信" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -18,9 +18,6 @@
     <link rel="stylesheet" href="./lib/venders/fullcalendar/fullcalendar.css" />
     <link rel="stylesheet" href="./css/calendarDemo.css" />
     <script src="./lib/venders/jquery/dist/jquery.min.js"></script>    
-
-    
-
 
     <script src="./lib/venders/angular/angular.min.js"></script>
     <script src="./lib/venders/angular-route.min.js"></script>
@@ -57,8 +54,10 @@
   js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=229267003947517";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-      <div ng-view></div>
 
+  <div class="row">
+    <ng-include src="'partials/template/navbar.html'"></ng-include>
+    <div ng-view></div>
   </body>
     
 </html>

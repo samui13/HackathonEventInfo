@@ -1,13 +1,10 @@
 <div id="eventlist">
-  <div class="row">
-    <ng-include src="'partials/template/navbar.html'"></ng-include>
-    <div id="contents" class="col-md-8 col-sm-12">
-      <h2>Hackathon Event List</h2>
-      <div ng-repeat="entry in entrys">
-	<a href="#/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
-      </div>
+  <div id="contents" class="col-md-8 col-sm-12">
+    <h2>Hackathon Event List</h2>
+    <div ng-repeat="entry in entrys">
+      <a href="#/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
     </div>
-    <div class="col-md-1">
-    </div>
+  </div>
+  <div class="col-md-1">
   </div>
 </div>

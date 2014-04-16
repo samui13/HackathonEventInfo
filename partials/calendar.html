@@ -1,6 +1,6 @@
 <script type="text/ng-template" id="myModalContent.html">
   <div class="modal-header">
-    <h3><a href="#/event/{{content._id}}" ng-click="goEvent()">{{content.title}}</a></h3>
+    <h3><a href="#!/event/{{content._id}}" ng-click="goEvent()">{{content.title}}</a></h3>
   </div>
   <div class="modal-body">
     <b>{{content.start | date:'yyyy-MM-dd'}}
@@ -16,19 +16,16 @@
   </div>
 </script>
 
-<!--<button class="btn btn-default" ng-click="open()">Open me!</button>-->
 <div>
-<div class="row">
-  <ng-include src="'partials/template/navbar.html'"></ng-include>
-    <div id="regionButton">
-      <span ng-repeat="r in regionOrder" style="background-color:{{region[r].color}};color:{{region[r].font_color}};padding:10px 10px;margin: 10px 0px;">
-	<a href ng-click="clickRegion(r,myCalendar1)" style="color:{{region[r].font_color}};">{{r}}</a>
-      </span>
-      <span style="background-color:#000;color:#fff;padding:10px 10px;margin: 10px 0px;">
-	<a href ng-click="clickRegion(undefined,myCalendar1)" style="color:#fff;">全部</a>
-      </span>
+  <div id="regionButton">
+    <span ng-repeat="r in regionOrder" style="background-color:{{region[r].color}};color:{{region[r].font_color}};padding:10px 10px;margin: 10px 0px;">
+      <a href ng-click="clickRegion(r,myCalendar1)" style="color:{{region[r].font_color}};">{{r}}</a>
+    </span>
+    <span style="background-color:#000;color:#fff;padding:10px 10px;margin: 10px 0px;">
+      <a href ng-click="clickRegion(undefined,myCalendar1)" style="color:#fff;">全部</a>
+    </span>
 
-    </div>
+  </div>
 
   <div id="calender" class="col-md-8 col-sm-12">
 
@@ -36,5 +33,4 @@
   </div>
   <div class="col-md-1">
   </div>
-</div>
 </div>
