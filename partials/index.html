@@ -6,28 +6,28 @@
     <div id="eventList">
       <h2>最近登録されたEvent</h2>
       <div ng-repeat=" entry in newEntry">
-	<a href="#/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
+	<a href="#!/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
       </div>
-      <span class="pull-right"><a href="#/event/more">More</a></span>
+      <span class="pull-right"><a href="#!/event/more">More</a></span>
     </div>
     <div class="row">
       <!--
       <div class="col-md-4">
 	<div class="content">
-	  <h2><a href="http://hackathon.style-info.org/#/article/">【最新情報】 インタヴューなど</a></h2>
+	  <h2><a href="http://hackathon.style-info.org/#!/article/">【最新情報】 インタヴューなど</a></h2>
 	</div>
       </div>
       -->
       <div class="col-md-4">
 	<div class="content">
-	  <h2><a href="http://hackathon.style-info.org/#/calendar/">【一覧】カレンンダー </a></h2>
+	  <h2><a href="#!/calendar/">【一覧】カレンンダー </a></h2>
 	</div>
       </div>
 
 
       <div class="col-md-4" ng-repeat="region in regions">
 	<div class="content">
-	  <h2><a href="#/calendar/{{region}}">【{{region}}エリア】ハッカソンまとめ</a></h2>
+	  <h2><a href="#!/calendar/{{region}}">【{{region}}エリア】ハッカソンまとめ</a></h2>
 	  {{region.id}}
 	</div>
       </div>

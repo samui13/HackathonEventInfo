@@ -3,6 +3,6 @@
     "version":"0.0.1",
     "dependencies": {
 	"angular-ui-calendar": "latest",
-	"bootstrap-css":"2.3.1"
+	"bootstrap-css":"3.1.1"
     }
 }
