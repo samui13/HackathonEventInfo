@@ -19,10 +19,10 @@
 <div>
   <div id="regionButton">
     <span ng-repeat="r in regionOrder" style="background-color:{{region[r].color}};color:{{region[r].font_color}};padding:10px 10px;margin: 10px 0px;">
-      <a href ng-click="clickRegion(r,myCalendar1)" style="color:{{region[r].font_color}};">{{r}}</a>
+      <a href ng-mouseover="clickRegion(r,myCalendar1)" style="color:{{region[r].font_color}};">{{r}}</a>
     </span>
     <span style="background-color:#000;color:#fff;padding:10px 10px;margin: 10px 0px;">
-      <a href ng-click="clickRegion(undefined,myCalendar1)" style="color:#fff;">全部</a>
+      <a href ng-mouseover="clickRegion(undefined,myCalendar1)" style="color:#fff;">全部</a>
     </span>
 
   </div>
