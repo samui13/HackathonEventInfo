@@ -2,15 +2,15 @@
 <html lang="en" ng-app="calendarApp" id="top">
   <head>
     <meta content="!" name="fragment">
-    <title>Hackathon Style Info - {{title}}</title>
+    <title>Hackathon Event Info - Let's Hackathon! </title>
     <meta http-equiv="Content-Style-Type" content="text/css; charset=UTF-8">
     
     <meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
     <meta http-equiv="description" content="hackathonイベント情報一覧。ハッカソンイベントをカレンダーで見れる。過去のハッカソンのプロダクトをまとめる">
-    <meta http-equiv="keywords" content="hackathon,イベント情報,ハッカソマトメ,ハッカソン一覧,プロダクト,ハッカソングループ">
+    <meta http-equiv="keywords" content="hackathon,ハッカソン,イベント情報,ハッカソマトメ,ハッカソン一覧,ハッカソングループ">
     
-    <meta content="Hackathon Style Info" property="og:site_name">
-    <meta content="Hackathon Style Info" property="og:title">
+    <meta content="Hackathon Event Info" property="og:site_name">
+    <meta content="Hackathon Event Info - Let's Hackathon! " property="og:title">
     <meta content="http://hackathon.style-info.org/" property="og:url"> 
     <meta property="og:description" content="Hackathonの情報を配信" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -53,9 +53,11 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=229267003947517";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
-  <div class="row">
+
+<div class="row">
     <ng-include src="'partials/template/navbar.html'"></ng-include>
     <div ng-view></div>
   </body>
