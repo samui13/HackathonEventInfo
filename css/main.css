@@ -21,6 +21,10 @@ body{
 #rNavi h1 a:visited{
     color:#595959;
 }
+#rNavi .fb-like{
+    padding-left:60px;
+    padding-top:10px;
+}
 #regionButton{
     margin-top:50px;
 }
