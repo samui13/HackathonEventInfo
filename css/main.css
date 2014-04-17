@@ -111,3 +111,22 @@ body{
     color:rgb(31,78,138);
 
 }
+
+#article #contents {
+    background-color:#FFF;
+}
+
+#article #contents article{
+    padding-bottom:20px;
+}
+#article #contents nav{
+    padding-bottom:20px;
+}
+#article #contents nav h1{
+    font-size:20px;
+    //display:none;
+
+}
+#article #contents .comment-respond{
+    padding-bottom:20px;
+}
