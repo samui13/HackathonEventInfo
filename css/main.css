@@ -1,5 +1,9 @@
 body{
-    background-color:#FBFCF2;
+    //background-color:#FBFCF2;
+    background-image: url("../images/haikei.png");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center
 }
 .site-title{
     font-color:#595959;
