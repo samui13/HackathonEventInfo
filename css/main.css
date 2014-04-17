@@ -24,6 +24,9 @@ body{
 #rNavi .fb-like{
     padding-top:10px;
 }
+#rNavi #twitter-widget-0{
+    margin-bottom: 30px;
+}
 #regionButton{
     margin-top:50px;
 }
