@@ -82,6 +82,7 @@ body{
 #rNavi > .nav {
     padding-top:50px;
     margin-left:-10px;
+    padding-bottom:50px;
 }
 #rNavi > .nav li{
     border-bottom: 1px dotted #000;
