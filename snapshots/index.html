@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calendarApp" id="top">
+  <head>
+    <meta content="!" name="fragment">
+    <title>Hackathon Event Info - Let's Hackathon! </title>
+    <meta http-equiv="Content-Style-Type" content="text/css; charset=UTF-8">
+    
+    <meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+    <meta http-equiv="description" content="hackathonイベント情報一覧。ハッカソンイベントをカレンダーで見れる。過去のハッカソンのプロダクトをまとめる">
+    <meta http-equiv="keywords" content="hackathon,ハッカソン,イベント情報,ハッカソマトメ,ハッカソン一覧,ハッカソングループ">
+    
+    <meta content="Hackathon Event Info" property="og:site_name">
+    <meta content="Hackathon Event Info - Let's Hackathon! " property="og:title">
+    <meta content="http://hackathon.style-info.org/" property="og:url"> 
+    <meta property="og:description" content="Hackathonの情報を配信" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+
+    <link rel="stylesheet" href="./lib/venders/bootstrap-css/css/bootstrap.css"></link>
+    <script src="./lib/venders/bootstrap-css/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49603739-1', 'style-info.org');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+    <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=229267003947517";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="http://static.ak.facebook.com/connect/xd_arbiter/8n77RrR4jg0.js?version=40#channel=f38bbca2e0da57&amp;origin=http%3A%2F%2Fhackathon.style-info.org" style="border: medium none;" tab-index="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0" scrolling="no"></iframe><iframe src="https://s-static.ak.facebook.com/connect/xd_arbiter/8n77RrR4jg0.js?version=40#channel=f38bbca2e0da57&amp;origin=http%3A%2F%2Fhackathon.style-info.org" style="border: medium none;" tab-index="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0" scrolling="no"></iframe></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=229267003947517";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div class="row">
+    <!-- ngInclude: undefined --><ng-include class="ng-scope" src="'partials/template/navbar.html'"><div id="rNavi" class="col-md-3 col-sm-12 ng-scope">
+  <div class="site-title">
+    <h1><a href="#!">Hackathon Style Info</a></h1>
+  </div>
+  <p>Hackathon(ハッカソン)まとめ</p>
+  <div fb-iframe-plugin-query="action=like&amp;app_id=229267003947517&amp;href=http%3A%2F%2Fhackathon.style-info.org%2F&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey&amp;share=true&amp;show_faces=true" fb-xfbml-state="rendered" class="fb-like fb_iframe_widget" data-href="http://hackathon.style-info.org/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"><span style="vertical-align: bottom; width: 69px; height: 86px;"><iframe class="" src="http://www.facebook.com/plugins/like.php?action=like&amp;app_id=229267003947517&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F8n77RrR4jg0.js%3Fversion%3D40%23cb%3Df1519d50a9f3dc6%26domain%3Dhackathon.style-info.org%26origin%3Dhttp%253A%252F%252Fhackathon.style-info.org%252Ff38bbca2e0da57%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fhackathon.style-info.org%2F&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: medium none; visibility: visible; width: 69px; height: 86px;" title="fb:like Facebook Social Plugin" allowtransparency="true" name="f4e0844632b242" frameborder="0" height="1000px" scrolling="no" width="1000px"></iframe></span></div>
+
+  <iframe style="width: 130px; height: 20px;" data-twttr-rendered="true" title="Twitter Tweet Button" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" src="http://platform.twitter.com/widgets/tweet_button.1397165098.html#_=1397760157034&amp;count=horizontal&amp;hashtags=HackathonStyle&amp;id=twitter-widget-0&amp;lang=ja&amp;original_referer=http%3A%2F%2Fhackathon.style-info.org%2F%23!%2F&amp;size=m&amp;text=%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3%E6%83%85%E5%A0%B1%E6%BA%80%E8%BC%89&amp;url=http%3A%2F%2Fhackathon.style-info.org%2F" allowtransparency="true" id="twitter-widget-0" frameborder="0" scrolling="no"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <ul class="nav nav-pills nav-stacked">
+    <li><a href="#!">ホーム</a></li>
+    <li><a href="#!/article/">最近の投稿</a></li>
+    <li><a href="#!/calendar/">イベントカレンダー</a></li>
+    <li><a href="#!/article/?p=12">お問い合わせ</a></li>
+  </ul>
+
+  
+
+</div>
+</ng-include>
+    <!-- ngView:  --><div class="ng-scope" ng-view=""><div class="ng-scope" id="index">
+  <div id="contents" class="col-md-8 col-sm-12">
+    <div id="eventList">
+      <h2>最近登録されたEvent</h2>
+      <!-- ngRepeat: entry in newEntry --><div class="ng-scope" ng-repeat=" entry in newEntry">
+	<a href="#!/event/9gkpcpmooarae357la7pvobptg"><h3 class="ng-binding">【東京】Monex Hackathon</h3></a>
+      </div><!-- end ngRepeat: entry in newEntry --><div class="ng-scope" ng-repeat=" entry in newEntry">
+	<a href="#!/event/mtq6enk2oi06prahjq8d1j1ics"><h3 class="ng-binding">【全国】paizaオンラインハッカソンVol.2</h3></a>
+      </div><!-- end ngRepeat: entry in newEntry --><div class="ng-scope" ng-repeat=" entry in newEntry">
+	<a href="#!/event/umvthkbktgp0k1d5rfb4dakn1s"><h3 class="ng-binding">【千葉】スマートフォンアプリジャム2014(SPAJAM)</h3></a>
+      </div><!-- end ngRepeat: entry in newEntry --><div class="ng-scope" ng-repeat=" entry in newEntry">
+	<a href="#!/event/fkppn35lqa29vjf978a6sqb5hk"><h3 class="ng-binding">【東京】ウェアラブルアイデアソン by Panasonic</h3></a>
+      </div><!-- end ngRepeat: entry in newEntry -->
+      <span class="pull-right"><a href="#!/event/more">More</a></span>
+    </div>
+    <div class="row">
+      <!--
+	  <div class="col-md-4">
+	    <div class="content">
+	      <h2><a href="http://hackathon.style-info.org/#!/article/">【最新情報】 インタヴューなど</a></h2>
+	    </div>
+	  </div>
+	  -->
+      <div class="col-md-4">
+	<div class="content">
+	  <h2><a href="#!/calendar/">【一覧】カレンダー </a></h2>
+	</div>
+      </div>
+
+
+      <!-- ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/北海道">【北海道エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/東北">【東北エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/関東">【関東エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/中部">【中部エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/関西">【関西エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/中国">【中国エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/四国">【四国エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions --><div class="col-md-4 ng-scope" ng-repeat="region in regions">
+	<div class="content ng-binding">
+	  <h2><a class="ng-binding" href="#!/calendar/九州">【九州エリア】ハッカソンまとめ</a></h2>
+	  
+	</div>
+      </div><!-- end ngRepeat: region in regions -->
+    </div>
+  </div>
+  <div class="col-md-1">
+  </div>
+
+</div>
+</div>
+  
+    
+
+</div><div style="left: 0px ! important; top: 0px ! important;" class="firebugResetStyles firebugBlockBackgroundColor firebugLayoutBox firebugLayoutBoxOffset"><div style="padding: 0px ! important; background-color: rgb(237, 255, 100) ! important;" class="firebugResetStyles firebugLayoutBox"><div style="padding: 0px ! important; background-color: rgb(68, 68, 68) ! important;" class="firebugResetStyles firebugLayoutBox"><div style="padding: 0px ! important; background-color: SlateBlue ! important;" class="firebugResetStyles firebugLayoutBox"><div style="width: 1175px ! important; height: 1118.6px ! important; background-color: SkyBlue ! important;" class="firebugResetStyles firebugLayoutBox"></div></div></div></div></div>
+    
+</html>
