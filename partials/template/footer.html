@@ -4,19 +4,28 @@
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </div>
 
-  <div class="col-md-4">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hackathon.style-info.org/" data-text="ハッカソン情報満載" data-lang="ja" data-hashtags="HackathonStyle">ツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-<div class="fb-like" data-href="http://hackathon.style-info.org/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+  <div ng-controller="regionEventCtrl" class="col-md-4">
+    <div style="background-color:#FFF;">
+      <h3>地域別情報</h3>
+      <ul class="nav nav-pills nav-stacked" style="list-style-type: none;">
+	
+	<li ng-repeat="entry in regions" style="">
+	  <a href="#!/calendar/{{entry}}">{{entry}}</a>
+	</li>
+      </ul>
+    </div>
   </div>
 
-  <div ng-controller="recentEvent"  class="col-md-4" style="background-color:#fff;">
-    <h3>最近登録されたEvent</h3>
-    <div ng-repeat=" entry in newEntry">
-      <a href="#!/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
-      </div>
-    <span class="pull-right"><a href="#!/event/more">More</a></span>
-  </div>
+  <div ng-controller="recentEvent"  class="col-md-4">
+    <div style="background-color:#fff;">
+      <h3>最近登録されたEvent</h3>
+      <ul class="nav nav-pills nav-stacked" style="list-style-type: none;">
+	<li ng-repeat=" entry in newEntry">
+	  <a href="#!/event/{{getID(entry.id.$t)}}"><h5>{{entry.title.$t}}</h5></a>
+	</li>
+      </ul>
+      <p><a href="#!/event/more">More</a></p>
+    </div>
+</div>
 </div>
 
