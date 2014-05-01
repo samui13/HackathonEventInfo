@@ -1,37 +1,8 @@
 <div id="index">
   <div id="contents" class="col-md-12 col-sm-12">
-    <div id="eventList">
-      <h2>最近登録されたEvent</h2>
-      <div ng-repeat=" entry in newEntry">
-	<a href="#!/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
-      </div>
-      <span class="pull-right"><a href="#!/event/more">More</a></span>
+    <div style="background-color:#FFF;padding: 25px 15px;" ng-controller="CalendarCtrl">
+      <div class="calendar" ng-model="eventSources" calendar="myCalendar1" config="uiConfig.calendar" ui-calendar="uiConfig.calendar" style="width:auto;"></div>
     </div>
-    
-    <div class="row">
-      <!--
-	  <div class="col-md-4">
-	    <div class="content">
-	      <h2><a href="http://hackathon.style-info.org/#!/article/">【最新情報】 インタヴューなど</a></h2>
-	    </div>
-	  </div>
-	  -->
-      <div class="col-md-4">
-	<div class="content">
-	  <h2><a href="#!/calendar/">【一覧】カレンダー </a></h2>
-	</div>
-      </div>
-
-
-      <div class="col-md-4" ng-repeat="region in regions">
-	<div class="content">
-	  <h2><a href="#!/calendar/{{region}}">【{{region}}エリア】ハッカソンまとめ</a></h2>
-	  {{region.id}}
-	</div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-1">
   </div>
 
 </div>

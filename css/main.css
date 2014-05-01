@@ -15,6 +15,40 @@ body{
     background-color:#FBFCF2;
     padding: 0 30px;
 }
+
+#rNavi h1{
+    margin-right: 40px;
+
+}
+
+#rNavi li:not(:first-child) {
+    padding-top: 20px;
+    border-bottom: 1px dotted #000;
+}
+
+#rNavi > .nav {
+    //padding-top:50px;
+    //margin-left:-10px;
+    //padding-bottom:50px;
+}
+#rNavi > .nav li{
+    
+    //padding-left:20px;
+}
+
+#rNavi > .nav li a:link{
+    color:#000;
+    
+}
+#rNavi > .nav li a:hover{
+    background-color: #FFF;
+    //background-color: rgbrgb(250,252,238);
+
+}
+#rNavi > .nav li a:visited{
+    color:#000;
+}
+
 #rNavi h1 a:link{
     color:#595959;
 }
@@ -80,29 +114,6 @@ body{
 
 #index #eventList h3{
 }
-#rNavi > .nav {
-    padding-top:50px;
-    margin-left:-10px;
-    padding-bottom:50px;
-}
-#rNavi > .nav li{
-    border-bottom: 1px dotted #000;
-    padding-left:20px;
-}
-
-#rNavi > .nav li a:link{
-    color:#000;
-    
-}
-#rNavi > .nav li a:hover{
-    background-color: #FFF;
-    //background-color: rgbrgb(250,252,238);
-
-}
-#rNavi > .nav li a:visited{
-    color:#000;
-}
-
 
 .site-main{
     color: #000;
