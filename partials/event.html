@@ -1,14 +1,18 @@
 <div id="event">
-  <div id="contents" class="col-md-8 col-sm-12">
+  <div id="contents" class="col-md-12 col-sm-12">
     <div>
-      <div class="fb-like" data-href="http://hackathon.style-info.org/#/event/{{id}}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://urx.nu/7RJT/#!/event/{{id}}" data-text="Hackathon Style Info - {{entry.title.$t}}" data-lang="ja" data-hashtags="HackathonStyle">ツイート</a>
+      <a href="#!/calendar"><<カレンダーに戻る</a>
     </div>
     <h2><a href="{{entry.URL}}">{{entry.title.$t}}</a></h2>
     <div class="row">
       <div ng-bind-html="entry.content.markUP"></div>
     </div>
-      
+
+    <div>
+      <div class="fb-like" data-href="http://hackathon.style-info.org/#/event/{{id}}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://urx.nu/7RJT/#!/event/{{id}}" data-text="Hackathon Style Info - {{entry.title.$t}}" data-lang="ja" data-hashtags="HackathonStyle">ツイート</a>
+    </div>
+
   </div>
   <div class="col-md-1">
   </div>
