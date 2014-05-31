@@ -7,7 +7,7 @@
     
     <meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
     <meta http-equiv="description" content="ハッカソンのイベントカレンダーサイトです。ハッカソンのイベントを地域ごとにカレンダー形式でまとめています。ご希望のイベントをお探し下さい。">
-    <meta http-equiv="keywords" content="ハッカソン,まとめ,日程,就活,開催,一覧,情報">
+    <meta http-equiv="keywords" content="ハッカソン,まとめ,日程,就活,開催,一覧,情報,地域別,関西,関東,北海道,中国,九州">
     
     <meta property="og:site_name" content="Hackathon Style Info">
     <meta property="og:title" content="Hackathon Style Info - Let's Hackathon! ">
@@ -34,33 +34,32 @@
     <script src="./lib/venders/bootstrap-css/js/bootstrap.min.js"></script>
     <script src="./lib/venders/jquery-ui/ui/jquery-ui.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49603739-1', 'style-info.org');
-  ga('send', 'pageview');
-
-</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-49603739-1', 'style-info.org');
+      ga('send', 'pageview');
+      
+    </script>
   </head>
-    <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=229267003947517";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
-
-<div class="row">
-    <ng-include src="'partials/template/navbar.html'"></ng-include>
-    <div class="container" ng-view></div>
-    <div class="container">
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=229267003947517";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="row">
+      <ng-include src="'partials/template/navbar.html'"></ng-include>
+      <div class="container" ng-view></div>
+    </div>
+    <div style="background-color: #FAFCEE;">
       <ng-include src="'partials/template/footer.html'"></ng-include>
     </div>
   </body>

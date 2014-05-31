@@ -1,3 +1,21 @@
+<script type="text/ng-template" id="myModalContent.html">
+  <div class="modal-header">
+    <h3><a href="#!/event/{{content._id}}" ng-click="goEvent()">{{content.title}}</a></h3>
+  </div>
+  <div class="modal-body">
+    <b>{{content.start | date:'yyyy-MM-dd'}}
+    -
+    {{content.end | date:'yyyy-MM-dd'}}
+    </b>
+    <div ng-bind-html="description"></div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+  </div>
+</script>
+
 <div id="index">
   <div id="contents" class="col-md-12 col-sm-12">
     <div style="background-color:#FFF;padding: 25px 15px;" ng-controller="CalendarCtrl">
