@@ -1,5 +1,10 @@
 body{
     //background-color:#FBFCF2;
+    background-image: url("../images/haikei.png");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center
+
 }
 .site-title{
     font-color:#595959;
@@ -8,12 +13,8 @@ body{
     background-color:#ffffff;
 }
 #rNavi{
-    background-image: url("../images/haikei.png");
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-position: center
 
-//    background-color:#FBFCF2;
+    background-color:#FBFCF2;
     padding: 0 30px;
 }
 
