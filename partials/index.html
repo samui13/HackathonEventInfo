@@ -1,3 +1,13 @@
+<div id="index">
+  <div class="container">
+    <div id="contents" class="col-md-12 col-sm-12">
+      <div style="background-color:#FFF;padding: 25px 15px;" ng-controller="CalendarCtrl">
+	<div class="calendar" ng-model="eventSources" calendar="myCalendar1" config="uiConfig.calendar" ui-calendar="uiConfig.calendar" style="width:auto;opacity:1.0;background:rgba(255,255,255,1.0);"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script type="text/ng-template" id="myModalContent.html">
   <div class="modal-header">
     <h3><a href="#!/event/{{content._id}}" ng-click="goEvent()">{{content.title}}</a></h3>
@@ -16,11 +26,3 @@
   </div>
 </script>
 
-<div id="index">
-  <div id="contents" class="col-md-12 col-sm-12">
-    <div style="background-color:#FFF;padding: 25px 15px;" ng-controller="CalendarCtrl">
-      <div class="calendar" ng-model="eventSources" calendar="myCalendar1" config="uiConfig.calendar" ui-calendar="uiConfig.calendar" style="width:auto;"></div>
-    </div>
-  </div>
-
-</div>

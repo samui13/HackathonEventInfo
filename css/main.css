@@ -1,32 +1,43 @@
 body{
-    //background-color:#FBFCF2;
-    background-image: url("../images/haikei.png");
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-position: center
-
+    height:100%;
+    background: url(../images/backgroundImg.jpg) no-repeat center center fixed;
 }
+#header h1{
+    color:#fff;
+    font-size:400%;
+}
+
 .site-title{
     font-color:#595959;
 }
 .calender{
     background-color:#ffffff;
 }
+#wrap{
+    margin: -20px 0;
+    background:rgba(48,48,48,0.8);
+}
 #rNavi{
-
-    background-color:#FBFCF2;
-    padding: 0 30px;
+    background:rgba(255,255,255,0.9);
+    text-align:center;
 }
 
-#rNavi h1{
-    margin-right: 40px;
-
+#rNavi ul{
+    margin:0 auto;
+    display:inline-block;
 }
 
-#rNavi li:not(:first-child) {
-    padding-top: 20px;
+#rNavi li{
+    //padding-top: 20px;
     border-bottom: 1px dotted #000;
+    
+    display: -moz-inline-box;
+    display: inline-block;
+    /display: inline;
+    /zoom: 1;
+    padding-right: 10px;
 }
+
 
 #rNavi > .nav {
     //padding-top:50px;
@@ -65,6 +76,25 @@ body{
 }
 #rNavi .twitter{
     border-bottom: none;
+}
+
+#footer {
+    padding-top:20px;
+//    background:rgba(48,48,48,0.8);
+}
+
+#main{
+    /*
+    background: url(../images/backgroundImg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    */
+}
+
+#index > div{
+    background-color:#fff;
 }
 
 #regionButton{
