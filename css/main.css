@@ -34,25 +34,17 @@ body{
 }
 
 #rNavi li{
-    //padding-top: 20px;
     border-bottom: 1px dotted #000;
     
     display: -moz-inline-box;
     display: inline-block;
-    /display: inline;
-    /zoom: 1;
     padding-right: 10px;
 }
 
 
 #rNavi > .nav {
-    //padding-top:50px;
-    //margin-left:-10px;
-    //padding-bottom:50px;
 }
 #rNavi > .nav li{
-    
-    //padding-left:20px;
 }
 
 #rNavi > .nav li a:link{
@@ -61,7 +53,6 @@ body{
 }
 #rNavi > .nav li a:hover{
     background-color: #FFF;
-    //background-color: rgbrgb(250,252,238);
 
 }
 #rNavi > .nav li a:visited{
@@ -86,18 +77,9 @@ body{
 
 #footer {
     padding-top:20px;
-//    background:rgba(48,48,48,0.8);
 }
 
-#main{
-    /*
-    background: url(../images/backgroundImg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    */
-}
+
 #regionButton{
     margin-top:50px;
 }
@@ -111,7 +93,6 @@ body{
 }
 #event #contents .row  h1{
     display:none;
-    //font-size:1px;
 }
 
 #event #contents{
@@ -120,11 +101,8 @@ body{
     padding-bottom:20px;
 }
 #index #contents .row > div{
-    //margin-left: 20px;
     margin-top:10px;
     height: 250px;
-    //margin-right: 100px;
-    //padding-left: 20px;
     color: #FFF;
 }
 #index #contents .content{
@@ -183,8 +161,6 @@ body{
 }
 #article #contents nav h1{
     font-size:20px;
-    //display:none;
-
 }
 #article #contents .comment-respond{
     padding-bottom:20px;
