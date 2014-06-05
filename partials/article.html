@@ -1,6 +1,9 @@
 <div id="article" class="container">
+  <div id="loading" class="text-center" style="background-color:#FFF;">
+    <img src="./images/ajax-loader.gif">
+  </div>
   <div id="contents">
-      <div ng-include="url"></div>
+      <div ng-include="url" onload='hideLoad()'></div>
   </div>
 </div>
 
