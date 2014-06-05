@@ -7,6 +7,12 @@ body{
     font-size:400%;
 }
 
+#header h1 a:visited,
+#header h1 a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
 .site-title{
     font-color:#595959;
 }
