@@ -98,11 +98,6 @@ body{
     background-size: cover;
     */
 }
-
-#index > div{
-    background-color:#fff;
-}
-
 #regionButton{
     margin-top:50px;
 }
