@@ -154,6 +154,7 @@ body{
 }
 
 #article #contents article{
+    padding-left: 10px;
     padding-bottom:20px;
 }
 #article #contents nav{
