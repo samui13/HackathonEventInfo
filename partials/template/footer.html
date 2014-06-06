@@ -6,10 +6,9 @@
     </div>
 
     <div ng-controller="regionEventCtrl" class="col-md-4">
-      <div style="background-color:#FFF;">
+      <div  style="background-color:#FFF;padding: 10px 10px;">
 	<h3>地域別情報</h3>
 	<ul class="nav nav-pills nav-stacked" style="list-style-type: none;">
-	  
 	  <li ng-repeat="entry in regions" style="">
 	    <a href="#!/calendar/{{entry}}">{{entry}}</a>
 	  </li>
@@ -18,7 +17,7 @@
     </div>
 
     <div ng-controller="recentEvent"  class="col-md-4">
-      <div style="background-color:#fff;">
+      <div  style="background-color:#FFF;padding: 10px 10px;">
 	<h3>最近登録されたEvent</h3>
 	<ul class="nav nav-pills nav-stacked" style="list-style-type: none;">
 	  <li ng-repeat=" entry in newEntry">
