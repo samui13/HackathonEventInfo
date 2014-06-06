@@ -1,8 +1,10 @@
 <div id="eventlist">
-  <div id="contents" class="container">
+  <div id="contents" class="container" style="margin-top:10px;">
     <h2>Hackathon Event List</h2>
-    <div ng-repeat="entry in entrys">
-      <a href="#!/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
-    </div>
+    <ul>
+      <li ng-repeat="entry in entrys">
+	<a href="#!/event/{{getID(entry.id.$t)}}"><h3>{{entry.title.$t}}</h3></a>
+      </li>
+    </ul>
   </div>
 </div>

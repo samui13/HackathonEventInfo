@@ -109,6 +109,7 @@ body{
 #calender{
     background-color:#ffffff;
 }
+
 #event #contents .row  h1{
     display:none;
 }
@@ -145,9 +146,6 @@ body{
     background-color: #fff;
 }
 
-#index #eventList h3{
-}
-
 .site-main{
     color: #000;
 }
@@ -158,6 +156,12 @@ body{
 }
 #eventlist #contents{
     background-color:#fFF;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#eventlist #contents ul{
+    list-style-type: none;
 }
 
 #eventlist #contents a:hover,a:link,a:visited{
