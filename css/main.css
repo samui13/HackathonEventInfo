@@ -37,6 +37,8 @@ body{
 #rNavi{
     background:rgba(255,255,255,0.9);
     text-align:center;
+    padding-bottom:10px;
+    padding-top: 10px;
 }
 
 #rNavi ul{
@@ -46,7 +48,6 @@ body{
 
 #rNavi li{
     border-bottom: 1px dotted #000;
-    
     display: -moz-inline-box;
     display: inline-block;
     padding-right: 10px;
