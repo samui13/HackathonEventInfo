@@ -23,6 +23,17 @@ body{
     margin: -20px 0;
     background:rgba(48,48,48,0.8);
 }
+#header{
+    text-align: center;
+}
+#header ul{
+    display:inline-block;
+}
+#header li{
+    padding-top:30px;
+    padding-left:20px;
+}
+
 #rNavi{
     background:rgba(255,255,255,0.9);
     text-align:center;
@@ -155,6 +166,7 @@ body{
 
 #article #contents article{
     padding-left: 10px;
+    padding-right: 10px;
     padding-bottom:20px;
     padding-top: 10px;
 }
