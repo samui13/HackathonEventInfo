@@ -41,12 +41,12 @@ body{
     padding-top: 10px;
 }
 
-#rNavi ul{
+#rNavi > ul{
     margin:0 auto;
     display:inline-block;
 }
 
-#rNavi li{
+#rNavi > li{
     border-bottom: 1px dotted #000;
     display: -moz-inline-box;
     display: inline-block;
@@ -56,18 +56,18 @@ body{
 
 #rNavi > .nav {
 }
-#rNavi > .nav li{
+#rNavi > .nav > li{
 }
 
-#rNavi > .nav li a:link{
+#rNavi > .nav > li a:link{
     color:#000;
     
 }
-#rNavi > .nav li a:hover{
+#rNavi > .nav > li a:hover{
     background-color: #FFF;
 
 }
-#rNavi > .nav li a:visited{
+#rNavi > .nav > li a:visited{
     color:#000;
 }
 
@@ -77,6 +77,8 @@ body{
 #rNavi h1 a:visited{
     color:#595959;
 }
+
+
 #rNavi .fb-like{
     padding-top:10px;
 }
